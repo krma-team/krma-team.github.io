@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Couleurs de base */
+  --background: 205 100% 5%;
+  --text: 0, 0%, 100%, 1;
+
+  /* Couleurs de marque */
+  --brand-lime: 62 85% 69%;
+  --brand-lavender: 242 85% 88%;
+  --brand-beige: 63, 41%, 83%, 1;
+  --brand-powder: 60, 24%, 96%, 1;
+  --brand-giants: 13, 90%, 58%, 1;
+}
+
+body {
+  color: hsl(var(--text));
+  background: hsl(var(--background));
+}
