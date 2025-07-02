@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+*.log
+package-lock.json
+yarn.lock
+
+# Production builds
+.next/
+
+# Environment variables
+.env
+.env.local
+
+# IDE and editor files
+.zed/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and runtime data
+logs/
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage and cache
+coverage/
+*.lcov
+.nyc_output
+.npm
+.eslintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Output of 'npm pack'
+*.tgz
+.yarn-integrity
+
+# Temporary folders
+tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+*.save
