@@ -13,9 +13,28 @@
   --brand-beige: 63, 41%, 83%, 1;
   --brand-powder: 60, 24%, 96%, 1;
   --brand-giants: 13, 90%, 58%, 1;
+  --brand-glacier: 194, 97%, 83%, 1;
+
+  /*  Linear Gradient   */
+  --border-linear-gradient: linear-gradient(
+    97.35deg,
+    #c8c6fa 19.5%,
+    #aaeafe 80.53%,
+    #eef36b 94.87%
+  );
 }
 
 body {
   color: hsl(var(--text));
   background: hsl(var(--background));
+}
+
+@layer components {
+  .border-linear-gradient {
+    background:
+      linear-gradient(hsl(var(--background)), hsl(var(--background)))
+        padding-box,
+      var(--border-linear-gradient) border-box;
+    border: 2px solid transparent;
+  }
 }

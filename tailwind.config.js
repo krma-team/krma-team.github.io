@@ -17,6 +17,7 @@ module.exports = {
         "brand-beige": "hsl(var(--brand-beige))",
         "brand-powder": "hsl(var(--brand-powder))",
         "brand-giants": "hsl(var(--brand-giants))",
+        "brand-glacier": "hsl(var(--brand-glacier))",
       },
     },
   },
