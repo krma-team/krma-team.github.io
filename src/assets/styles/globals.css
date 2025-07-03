@@ -47,9 +47,16 @@ body {
 }
 
 /* Custom component styles */
-.border-linear-gradient {
+.button-border-linear-gradient {
   background:
     linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
     var(--border-linear-gradient) border-box;
+  border: 2px solid transparent;
+}
+
+.card-border-linear-gradient {
+  background:
+    linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
+    var(--card-border-linear-gradient) border-box;
   border: 2px solid transparent;
 }
