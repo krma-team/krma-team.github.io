@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="flex flex-col">
+    <header className="flex flex-col fixed w-full bg-background">
       <HeaderBanner />
       <nav className="flex pl-24 items-center justify-between py-5 gap-10 uppercase text-lg font-medium">
         <div className="flex gap-10">
@@ -23,12 +23,11 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Do this with shadeCn later */}
         <button
-          className="flex border-2 cursor-pointer rounded-full px-8 py-3 hover:scale-110 "
+          className="flex text-2xl border-linear-gradient rounded-full text-brand-glacier font-extralight cursor-pointer px-8 py-2 hover:scale-110 mr-24 transition-transform"
           onClick={() => (window.location.href = "/portfolio")}
         >
-          Contacte
+          Contact
         </button>
       </nav>
     </header>

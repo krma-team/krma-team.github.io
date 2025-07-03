@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function PortfolioPage() {
   return (
-    <div className="text-center justify-center flex flex-col gap-2">
+    <div className="text-center justify-center flex flex-col pt-48 gap-2">
       <h1>Portfolio</h1>
       <Link
         href="/"
