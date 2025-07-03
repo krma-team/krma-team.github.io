@@ -1,18 +1,20 @@
 @import "tailwindcss";
 
+@theme {
+  /* Base colors */
+  --color-background: hsl(205 100% 5%);
+  --color-text: hsl(0 0% 100%);
+
+  /* Brand colors */
+  --color-brand-lime: hsl(62 85% 69%);
+  --color-brand-lavender: hsl(242 85% 88%);
+  --color-brand-beige: hsl(63 41% 83%);
+  --color-brand-powder: hsl(60 24% 96%);
+  --color-brand-giants: hsl(13 90% 58%);
+  --color-brand-glacier: hsl(194 97% 83%);
+}
+
 :root {
-  /* Couleurs de base */
-  --background: 205 100% 5%;
-  --text: 0, 0%, 100%, 1;
-
-  /* Couleurs de marque */
-  --brand-lime: 62 85% 69%;
-  --brand-lavender: 242 85% 88%;
-  --brand-beige: 63, 41%, 83%, 1;
-  --brand-powder: 60, 24%, 96%, 1;
-  --brand-giants: 13, 90%, 58%, 1;
-  --brand-glacier: 194, 97%, 83%, 1;
-
   /*  Linear Gradient   */
   --border-linear-gradient: linear-gradient(
     97.35deg,
@@ -23,14 +25,14 @@
 }
 
 body {
-  color: hsl(var(--text));
-  background: hsl(var(--background));
+  color: var(--color-text);
+  background: var(--color-background);
 }
 
 @layer components {
   .border-linear-gradient {
     background:
-      linear-gradient(hsl(var(--background)), hsl(var(--background)))
+      linear-gradient(var(--color-background), var(--color-background))
         padding-box,
       var(--border-linear-gradient) border-box;
     border: 2px solid transparent;
