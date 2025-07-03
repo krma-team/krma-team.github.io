@@ -1,7 +1,7 @@
 "use client";
 
-import HeaderBanner from "@/containers/HeaderBanner";
 import Link from "next/link";
+import HeaderBanner from "./containers/HeaderBanner";
 
 export default function Header() {
   return (
@@ -24,7 +24,7 @@ export default function Header() {
         </div>
 
         <button
-          className="flex text-2xl border-linear-gradient rounded-full text-brand-glacier font-extralight cursor-pointer px-8 py-2 hover:scale-110 mr-24 transition-transform"
+          className="flex text-2xl button-border-linear-gradient rounded-full text-brand-glacier font-extralight cursor-pointer px-8 py-2 hover:scale-110 mr-24 transition-transform"
           onClick={() => (window.location.href = "/portfolio")}
         >
           Contact
