@@ -1,26 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  /* Couleurs de base */
-  --background: 205 100% 5%;
-  --text: 0, 0%, 100%, 1;
+@theme {
+  --color-background: hsl(205 100% 5%);
+  --color-text: hsl(0 0% 100%);
 
   /* Couleurs de marque */
+  --color-brand-lime: hsl(62 85% 69%);
+  --color-brand-lavender: hsl(242 85% 88%);
+  --color-brand-beige: hsl(63 41% 83%);
+  --color-brand-powder: hsl(60 24% 96%);
+  --color-brand-giants: hsl(13 90% 58%);
+  --color-brand-glacier: hsl(194 97% 83%);
+}
+
+:root {
+  /* CSS custom properties for legacy support */
+  --background: 205 100% 5%;
+  --text: 0 0% 100%;
+
+  /* Couleurs de marque - legacy format */
   --brand-lime: 62 85% 69%;
   --brand-lavender: 242 85% 88%;
-  --brand-beige: 63, 41%, 83%, 1;
-  --brand-powder: 60, 24%, 96%, 1;
-  --brand-giants: 13, 90%, 58%, 1;
-  --brand-glacier: 194, 97%, 83%, 1;
+  --brand-beige: 63 41% 83%;
+  --brand-powder: 60 24% 96%;
+  --brand-giants: 13 90% 58%;
+  --brand-glacier: 194 97% 83%;
 
-  /*  Linear Gradient   */
+  /* Linear Gradient */
   --border-linear-gradient: linear-gradient(
     97.35deg,
     #c8c6fa 19.5%,
     #aaeafe 80.53%,
     #eef36b 94.87%
+  );
+  --card-border-linear-gradient: linear-gradient(
+    180deg,
+    #c8c6fa 0%,
+    #aaeafe 50%,
+    #eef36b 97.5%
   );
 }
 
@@ -29,12 +46,10 @@ body {
   background: hsl(var(--background));
 }
 
-@layer components {
-  .border-linear-gradient {
-    background:
-      linear-gradient(hsl(var(--background)), hsl(var(--background)))
-        padding-box,
-      var(--border-linear-gradient) border-box;
-    border: 2px solid transparent;
-  }
+/* Custom component styles */
+.border-linear-gradient {
+  background:
+    linear-gradient(hsl(var(--background)), hsl(var(--background))) padding-box,
+    var(--border-linear-gradient) border-box;
+  border: 2px solid transparent;
 }
