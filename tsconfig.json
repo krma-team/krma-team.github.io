@@ -19,15 +19,15 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@/components/containers/*": ["./src/components/containers/*"],
+      "@/components/containers/homepage/*": [
+        "./src/components/containers/homepage/*"
+      ],
+      "@/components/ui/*": ["./src/components/ui/*"]
     },
     "target": "ES2017"
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/**/**.tsx",
-    ".next/types/**/*.ts"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
