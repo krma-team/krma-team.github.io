@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import HeaderBanner from "./containers/HeaderBanner";
+import HeaderBanner from "@/components/containers/HeaderBanner";
 
 export default function Header() {
   return (
