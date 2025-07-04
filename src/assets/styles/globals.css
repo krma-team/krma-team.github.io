@@ -11,6 +11,9 @@
   --color-brand-powder: hsl(60 24% 96%);
   --color-brand-giants: hsl(13 90% 58%);
   --color-brand-glacier: hsl(194 97% 83%);
+
+  /* Font families */
+  --font-syne: var(--font-syne), sans-serif;
 }
 
 :root {
